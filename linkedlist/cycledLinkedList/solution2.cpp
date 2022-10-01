@@ -39,7 +39,8 @@ public:
                 targetNode=node;
                 break;
             };
-            nodeMap[addr.str()] = 1;
+            nodeMap[addr.str()
+            ] = 1;
             node=node->next;
         }
         if(start != -1){

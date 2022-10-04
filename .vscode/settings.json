@@ -64,6 +64,8 @@
     "algorithm": "cpp",
     "functional": "cpp",
     "iterator": "cpp",
-    "utility": "cpp"
+    "utility": "cpp",
+    "unordered_set": "cpp",
+    "map": "cpp"
   }
 }

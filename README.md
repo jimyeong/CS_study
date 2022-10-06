@@ -37,3 +37,18 @@ public:
     }
 };
 ```
+
+```
+6th of October
+ListNode * node = head;
+        // index=1로 썼는데 1부터 5칸을 가면 6이 된다.
+        int index = 0;
+        while(node){
+            node=node->next;
+            index++;
+        };
+
+
+        // 여기 next 하나만 써서 틀림 ㅠㅠ
+        cur->next = targetNode->next->next;
+```

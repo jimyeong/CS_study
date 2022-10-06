@@ -13,7 +13,6 @@ public:
     ListNode* removeNthFromEnd(ListNode* head, int n) {
         ListNode * node = head;
         // index=1로 썼는데 1부터 5칸을 가면 6이 된다.
-        
         int index = 0;
         while(node){
             node=node->next;

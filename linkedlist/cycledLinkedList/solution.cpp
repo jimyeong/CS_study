@@ -17,9 +17,35 @@ using namespace std;
       ListNode(int x) : val(x), next(NULL) {}
   };
 
-class Solution{
-    public : 
-    bool hasCycle(ListNode * head){
+class Solution {
+public:
+    bool hasCycle(ListNode *head) {
+        ListNode * normalStep;
+        ListNode * fastStep;
+        
+        normalStep = head;
+        fastStep = head;
+        
+        while(normalStep){
+            normalStep = normalStep->next;
+            if(fastStep)fastStep = fastStep->next;
+            if(fastStep){
+                fastStep = fastStep->next;
+                if(fastStep){                    
+                    if(normalStep == fastStep->next){
+                        return true;
+                        break;
+                    }
 
-    }
+                }
+            };
+            
+        };
+        if(normalStep == fastStep){
+            return false;
+        }else{
+            return true;
+        };
+        
+    };
 };

@@ -66,6 +66,7 @@
     "iterator": "cpp",
     "utility": "cpp",
     "unordered_set": "cpp",
-    "map": "cpp"
+    "map": "cpp",
+    "stack": "cpp"
   }
 }

@@ -19,15 +19,12 @@ public:
     ListNode* reverseList(ListNode* head) {
         ListNode * cur = head;
         ListNode * prev = nullptr;
-        
-        
         while(cur){
             cur->next = prev;
-            ListNode * nextNode = cur->next;
+            ListNode * nextNode = cur->next; // wrong answer, try drawing this image again
             prev = cur;
             cur = nextNode;  
         };
-        
         return prev;
     }
 };

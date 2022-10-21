@@ -24,10 +24,15 @@ public:
         ListNode * prev = nullptr;
         ListNode * newHead = nullptr;
         ListNode * eventh = nullptr;
+        if(!head){
+            return head;
+        };
+        int index = 1;
         
         int flag = (head->val)%2== 1 ? 1 : 0;
         if(head->val%2 == 1)flag = 1;
         if(head->val%2 == 0)flag = 0;
+
         
         while(node){
             if(!prev){
@@ -37,14 +42,24 @@ public:
             if(prev) {
                 
                 if(node->next) prev->next = node->next;
-                if(!(node->next)) prev->next = nullptr;
-                
+                if(!(node->next)) {
+                    if(index %2 == 1){
+                        prev->next=nullptr;
+                        node->next = eventh;
+                        break;
+                    };
+                    if(index %2 == 0){
+                        node->next=nullptr;
+                        prev->next = eventh;
+                    };
+                };
                 //if(!node->next) prev->next = eventh; 
             };
             prev = node;
             node = node->next;
+            index++;
         };
-        prev->next = eventh;
+        
         return newHead;
     };
 };

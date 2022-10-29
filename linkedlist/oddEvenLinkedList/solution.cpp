@@ -17,6 +17,7 @@ struct ListNode {
 };
 #include <iostream>
 using namespace std;
+
 class Solution {
 public:
     ListNode* oddEvenList(ListNode* head) {
@@ -28,11 +29,6 @@ public:
             return head;
         };
         int index = 1;
-        
-        int flag = (head->val)%2== 1 ? 1 : 0;
-        if(head->val%2 == 1)flag = 1;
-        if(head->val%2 == 0)flag = 0;
-
         
         while(node){
             if(!prev){

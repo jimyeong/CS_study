@@ -1,4 +1,5 @@
 #include <iostream>
+#include <stack>
 using namespace std;
 
 struct Node{
@@ -16,6 +17,7 @@ void helloWorld(int val){
 }
 
 int main(){
+    stack<Node> s;
     helloWorld(4);
     helloWorld(5);
     return 0;

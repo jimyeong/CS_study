@@ -1,4 +1,12 @@
 ```
+include<>
+std::ostringstream address;
+address << ${var}
+std::string name = address.str();
+
+```
+
+```
 intptr_t(&cur_node)  memory address in decimal
 ```
 

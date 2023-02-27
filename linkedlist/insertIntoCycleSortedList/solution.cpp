@@ -1,4 +1,4 @@
-/*
+#include <iostream>
 // Definition for a Node.
 class Node {
 public:
@@ -17,7 +17,7 @@ public:
         next = _next;
     }
 };
-*/
+
 using namespace std;
 #include <map>
 class Solution {

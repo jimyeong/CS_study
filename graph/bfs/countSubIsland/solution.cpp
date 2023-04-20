@@ -1,3 +1,9 @@
+
+#include <vector>
+using namespace std;
+
+// idea: contain means getting narrow, if you start from narrowed bit, then it will automatically satisfy the bigger bit
+
 class Solution {
 public:
     int countSubIslands(vector<vector<int>>& grid1, vector<vector<int>>& grid2) {
